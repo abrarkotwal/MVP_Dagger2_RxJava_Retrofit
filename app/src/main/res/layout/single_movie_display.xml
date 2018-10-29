@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:id="@+id/moviePoster"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/moviePoster"
+            android:layout_margin="8dp"
+            android:textColor="@color/text"
+            android:textSize="@dimen/text"
+            android:id="@+id/movieTitle"
+            android:textStyle="bold"
+            android:hint="Name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/text"
+            android:layout_below="@+id/moviePoster"
+            android:padding="8dp"
+            android:hint="Average"
+            android:id="@+id/movieRating"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/text"
+            android:layout_below="@+id/moviePoster"
+            android:padding="8dp"
+            android:hint="Release Date"
+            android:layout_alignParentRight="true"
+            android:id="@+id/movieReleaseDate"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/colorGreyLight"
+            android:layout_below="@+id/movieTitle"
+            android:layout_toRightOf="@+id/moviePoster"
+            android:hint="Overview"
+            android:layout_marginLeft="8dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:id="@+id/movieOverView"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

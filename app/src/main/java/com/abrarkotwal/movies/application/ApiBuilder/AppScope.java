@@ -1,0 +1,12 @@
+package com.abrarkotwal.movies.application.ApiBuilder;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+import javax.inject.Scope;
+
+
+@Scope
+@Retention(RetentionPolicy.CLASS)
+@interface AppScope {
+}
